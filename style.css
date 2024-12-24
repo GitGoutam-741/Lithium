@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+    position: relative; /* Ensure it is positioned relative */
+    z-index: 10; /* Higher z-index to stay above other content */
+}
+
+.logo {
+    max-width: 100px; /* Adjust logo size */
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.header-text {
+    flex-grow: 1; /* Allow text to take remaining space */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-text p {
+    font-size: 1.2em;
+}
+
+/* Sidebar Styles */
+nav.sidebar {
+    width: 250px; /* Width of the sidebar */
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 15px; /* Padding inside the sidebar */
+    position: fixed; /* Fixed position */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Scroll if content is too long */
+}
+
+.sidebar h2 {
+    text-align: center; /* Center the title */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Space between links */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    padding: 10px; /* Padding for links */
+    display: block; /* Make the link fill the list item */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd; /* Change background on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1; /* This allows the main content to grow and take available space */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto for consistency */
+    margin: 0;
+    padding: 20px; /* Padding for main content */
+    background-color: #f9f9f9; /* Light pastel background */
+    color: #333; /* Dark text for contrast */
+    margin-top: 20px; /* Add margin-top to create space for the header */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#collegeSearch {
+    padding: 10px;
+    border: 2px solid #ffb3b3; /* Light pastel red border */
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
+}
+
+#suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+}
+
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions div:hover {
+    background-color: #f1f1f1;
+}
+
+/* Intro Section Styles */
+.intro {
+    text-align:left;
+    padding: 20px;
+    background-color: #e6ffe6; /* Light pastel green */
+    border-radius: 5px;
+}
+
+.intro h2 {
+    color: #2e7d32; /* Darker green for the heading */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1; /* Light gray background for the footer */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for the footer */
+    position: relative; /* Position relative to the normal flow */
+}
+
+footer p {
+    margin: 0;
+    color: #555; /* Slightly darker text */
+}
+
+/* Button Styles */
+button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Button hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px){
+    nav.sidebar {
+        /* padding-top: 50px; */
+        width: 100%; /* Full width for mobile */
+        position: sticky; /* Change to relative for mobile */
+        top: 200px;
+        height: auto; /* Auto height for mobile */
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove margin for mobile */
+    }
+
+    .main-content {
+        text-align: left;
+    }
+}
+
+.placement {
+    color: black;
+  }
+  
+  .hub {
+    color: red;
+  }
+  
+  .intro{
+    margin: 20px;
+  }
+  .intro {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 250px;
+  }
+
+
+.inner-content{
+    position: relative;
+    top: 150px;
+}
+
+.aarav{
+    text-decoration: none;
+    color: blue;
+}
+  
+.container{
+    text-align: center;
+}
